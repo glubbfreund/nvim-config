@@ -3,6 +3,15 @@ if not status_ok then
 	return
 end
 
+-- custom edit
+vim.cmd("let &shell = has('win32') ? 'pwsh -NoLogo' : 'pwsh'")
+vim.cmd("let &shellcmdflag = '-NoLogo -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;'")
+vim.cmd("let &shellredir = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'")
+vim.cmd("let &shellpipe = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'")
+vim.cmd("set shellquote= shellxquote=")
+-- custom edit
+
+
 toggleterm.setup({
 	size = 20,
 	open_mapping = [[<c-\>]],

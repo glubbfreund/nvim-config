@@ -4,14 +4,15 @@ if not status_ok then
 end
 
 local dashboard = require "alpha.themes.dashboard"
+-- customizing
 dashboard.section.header.val = {
-  [[                               __                ]],
-  [[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
-  [[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
-  [[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
-  [[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
-  [[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
+  [[ ▐ ▄ ▄▄▄ .       ▌ ▐·▪  • ▌ ▄ ·. ]],
+  [[•█▌▐█▀▄.▀·▪     ▪█·█▌██ ·██ ▐███▪]],
+  [[▐█▐▐▌▐▀▀▪▄ ▄█▀▄ ▐█▐█•▐█·▐█ ▌▐▌▐█·]],
+  [[██▐█▌▐█▄▄▌▐█▌.▐▌ ███ ▐█▌██ ██▌▐█▌]],
+  [[▀▀ █▪ ▀▀▀  ▀█▄▀▪. ▀  ▀▀▀▀▀  █▪▀▀▀]],
 }
+-- customizing
 dashboard.section.buttons.val = {
   dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
   dashboard.button("e", " " .. " New file", ":ene <BAR> startinsert <CR>"),
@@ -22,7 +23,13 @@ dashboard.section.buttons.val = {
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
-  return "chrisatmachine.com"
+  -- customizing
+  local datetime = os.date(" %d-%m-%Y   %H:%M:%S")
+  local version = vim.version()
+  local nvim_version_info = "   v" .. version.major .. "." .. version.minor .. "." .. version.patch
+
+  return datetime .. "   " .. nvim_version_info
+  -- customizing
 end
 
 dashboard.section.footer.val = footer()
