@@ -12,6 +12,12 @@ bufferline.setup {
   },
 
   highlights = {
+    buffer_selected = { italic = false },
+	diagnostic_selected = { italic = false },
+	hint_selected = { italic = false },
+	pick_selected = { italic = false },
+	pick_visible = { italic = false },
+	pick = { italic = false },
     fill = {
       fg = { attribute = "fg", highlight = "#ff0000" },
       bg = { attribute = "bg", highlight = "TabLine" },
@@ -35,7 +41,6 @@ bufferline.setup {
       fg = { attribute = "fg", highlight = "TabLine" },
       bg = { attribute = "bg", highlight = "TabLine" },
     },
-   
     tab_selected = {
       fg = { attribute = "fg", highlight = "Normal" },
       bg = { attribute = "bg", highlight = "Normal" },

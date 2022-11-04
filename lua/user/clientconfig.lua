@@ -2,7 +2,7 @@ if vim.g.neovide then
     --vim.g.neovide_transparency = 0.70
     --vim.g.neovide_cursor_vfx_mode = "pixiedust"
     vim.g.neovide_fullscreen = true
-    vim.api.nvim_exec([[set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h16]], false)
+    vim.api.nvim_exec([[set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h15]], false)
 else
     require("transparent").setup({
         enable = true, -- boolean: enable transparent
