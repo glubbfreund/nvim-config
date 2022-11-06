@@ -15,7 +15,7 @@ vim.api.nvim_create_autocmd("User", {
 })
 vim.api.nvim_create_autocmd("BufUnload", {
   callback = function()
-    vim.o.showtabline = 2
+    vim.o.showtabline = 1
   end,
   group = toggle_bufferline,
   pattern = "<buffer>",
@@ -49,7 +49,7 @@ end
 dashboard.section.footer.val = footer()
 
 dashboard.section.footer.opts.hl = "Type"
-dashboard.section.header.opts.hl = "Identifier"
+dashboard.section.header.opts.hl = "Type"
 dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
