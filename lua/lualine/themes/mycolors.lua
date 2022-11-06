@@ -7,12 +7,10 @@ local colors = {
   yellow       = '#e0af68', -- command mode
   gray         = '#a89984',
   darkgray     = '#16161e', -- used as bg
-  -- darkgray     = 'Normal',
   lightgray    = '#504945',
   inactivegray = '#7c6f64',
   magenta      = "#c099ff", -- visual mode
   fg_gutter    = "#16161e", -- used as bg
-  --fg_gutter    = 'None'
 }
 return {
     normal = {
