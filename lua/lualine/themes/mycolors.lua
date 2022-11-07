@@ -2,15 +2,15 @@ local colors = {
   black        = '#282828', -- fg
   white        = '#ebdbb2',
   red          = "#f7768e", -- replace mode
-  green        = '#9ece6a', -- instert mode
+  green        = '#9ECE6A', -- instert mode
   blue         = '#72E6CC', -- normal mode
   yellow       = '#e0af68', -- command mode
   gray         = '#a89984',
   darkgray     = '#16161e', -- used as bg
   lightgray    = '#504945',
   inactivegray = '#7c6f64',
-  magenta      = "#c099ff", -- visual mode
-  fg_gutter    = "#16161e", -- used as bg
+  magenta      = '#9D7CD8', -- visual mode
+  fg_gutter    = '#16161e', -- used as bg
 }
 return {
     normal = {
