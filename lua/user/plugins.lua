@@ -49,12 +49,7 @@ return packer.startup(function(use)
   use { "numToStr/Comment.nvim" }
   use { "JoosepAlviste/nvim-ts-context-commentstring" }
   use { "kyazdani42/nvim-web-devicons" }
-  use { "kyazdani42/nvim-tree.lua" }
-  use { "akinsho/bufferline.nvim" }
-  use { "moll/vim-bbye" }
   use { "nvim-lualine/lualine.nvim" }
-  use { "akinsho/toggleterm.nvim" }
-  use { "ahmedkhalf/project.nvim" }
   use { "lewis6991/impatient.nvim" }
   use { "goolord/alpha-nvim" }
 
@@ -95,9 +90,6 @@ return packer.startup(function(use)
   use { "mfussenegger/nvim-dap" }
   use { "rcarriga/nvim-dap-ui" }
   use { "ravenxrz/DAPInstall.nvim" }
-
-  -- Minigame
-  use { "ThePrimeagen/vim-be-good" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
