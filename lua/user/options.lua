@@ -40,4 +40,4 @@ vim.g.python3_host_prog = "C:\\Users\\olive\\AppData\\Local\\Programs\\Python\\P
 vim.g.python_host_prog = "C:\\Users\\olive\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
 vim.g.netrw_banner = 0
 vim.g.netrw_keepdir = 0
-vim.opt.shell="pwsh"
+vim.opt.shell="pwsh -NoLogo"

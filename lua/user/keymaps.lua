@@ -10,7 +10,7 @@ vim.g.mapleader = ","
 keymap("n", "<leader>e", ":Explore!<CR>", opts)
 
 -- Remap terminal
-keymap("n", "<leader>t", ":terminal<CR>", opts)
+keymap("n", "<leader>t", ":terminal!<CR>", opts)
 
 -- Modes
 --   normal_mode = "n",
