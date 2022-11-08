@@ -38,8 +38,6 @@ vim.opt.whichwrap:append("<,>,[,],h,l")         -- keys allowed to move to the p
 vim.opt.iskeyword:append("-")                   -- treats words with `-` as single words
 vim.g.python3_host_prog = "C:\\Users\\olive\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
 vim.g.python_host_prog = "C:\\Users\\olive\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
-if vim.g.neovide then
-    vim.g.neovide_transparency = 0.70
-    vim.g.neovide_fullscreen = false
-    vim.api.nvim_exec([[set guifont=JetBrainsMono\ Nerd\ Font\ Mono:h14]], false)
-end
+vim.g.netrw_banner = 0
+vim.g.netrw_keepdir = 0
+vim.opt.shell="pwsh"

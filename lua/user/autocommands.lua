@@ -79,3 +79,9 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 	end,
 })
 
+-- Start Terminal in insert mode
+vim.api.nvim_create_autocmd('TermOpen', {
+  pattern = '*',
+  group = vim.api.nvim_create_augroup('reset_group', {clear = true}),
+  command = 'startinsert'
+})

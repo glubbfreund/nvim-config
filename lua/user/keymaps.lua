@@ -6,6 +6,12 @@ local opts = { silent = true }
 --Remap space as leader key
 vim.g.mapleader = ","
 
+-- Remap Netrw
+keymap("n", "<leader>e", ":Explore!<CR>", opts)
+
+-- Remap terminal
+keymap("n", "<leader>t", ":terminal<CR>", opts)
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
