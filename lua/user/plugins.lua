@@ -46,7 +46,6 @@ return packer.startup(function(use)
   -- My plugins here
   use { "wbthomason/packer.nvim" }-- Have packer manage itself
   use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
-  use { "windwp/nvim-autopairs" } -- Autopairs, integrates with both cmp and treesitter
   use { "numToStr/Comment.nvim" }
   use { "JoosepAlviste/nvim-ts-context-commentstring" }
   use { "kyazdani42/nvim-web-devicons" }
@@ -80,13 +79,13 @@ return packer.startup(function(use)
   use { "williamboman/mason.nvim" }
   use { "williamboman/mason-lspconfig.nvim" }
   use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
-  use { "RRethy/vim-illuminate" }
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim" }
 
   -- Treesitter
   use { "nvim-treesitter/nvim-treesitter" }
+  use { "nvim-treesitter/nvim-treesitter-context" }
 
   -- Git
   use { "lewis6991/gitsigns.nvim" }
@@ -96,6 +95,9 @@ return packer.startup(function(use)
   use { "mfussenegger/nvim-dap" }
   use { "rcarriga/nvim-dap-ui" }
   use { "ravenxrz/DAPInstall.nvim" }
+
+  -- Minigame
+  use { "ThePrimeagen/vim-be-good" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
