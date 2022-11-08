@@ -46,12 +46,9 @@ return packer.startup(function(use)
   -- My plugins here
   use { "wbthomason/packer.nvim" }-- Have packer manage itself
   use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
-  use { "numToStr/Comment.nvim" }
-  use { "JoosepAlviste/nvim-ts-context-commentstring" }
   use { "kyazdani42/nvim-web-devicons" }
   use { "nvim-lualine/lualine.nvim" }
   use { "lewis6991/impatient.nvim" }
-  use { "goolord/alpha-nvim" }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim" }
