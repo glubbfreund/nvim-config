@@ -40,3 +40,6 @@ vim.g.python3_host_prog = "C:\\Users\\olive\\AppData\\Local\\Programs\\Python\\P
 vim.g.python_host_prog = "C:\\Users\\olive\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
 vim.g.netrw_banner = 0
 vim.g.netrw_keepdir = 0
+vim.g.neovide_transparency = 0.6
+vim.g.neovide_floating_blur_amount_x = 2.0
+vim.g.neovide_floating_blur_amount_y = 2.0

@@ -10,7 +10,9 @@ vim.g.mapleader = ","
 keymap("n", "<leader>e", ":Explore!<CR>", opts)
 
 -- Remap terminal
-keymap("n", "<leader>t", ":te pwsh -nologo<CR>", opts)
+keymap("n", "<leader>th", ":te pwsh -nologo<CR>", opts)
+keymap("n", "<leader>tv", ":split | :te pwsh -nologo<CR>", opts)
+keymap("n", "<leader>t", ":split | :te pwsh -nologo<CR>", opts)
 
 -- Modes
 --   normal_mode = "n",
