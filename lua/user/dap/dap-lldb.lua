@@ -4,7 +4,7 @@ dap.adapters.codelldb = {
   type = 'server',
   port = "${port}",
   executable = {
-    command = 'D:\\Dev\\res\\vscode-lldb\\adapter\\codelldb.exe',
+    command = '/home/oli/Dev/res/codelldb/extension/adapter/codelldb',
     args = {"--port", "${port}"},
 
     detached = false,

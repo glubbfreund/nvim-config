@@ -1,7 +1,7 @@
 local dap = require('dap')
 dap.adapters.python = {
   type = 'executable';
-  command = 'C:\\Users\\olive\\AppData\\Local\\Programs\\Python\\Python311\\python.exe';
+  command = '/usr/bin/python';
   args = { '-m', 'debugpy.adapter' };
 }
 dap.configurations.python = {
@@ -25,7 +25,7 @@ dap.configurations.python = {
       elseif vim.fn.executable(cwd .. '/.venv/bin/python.exe') == 1 then
         return cwd .. '/.venv/bin/python.exe'
       else
-        return 'C:\\Users\\olive\\Appdata\\Local\\Programs\\Python\\Python311\\python.exe'
+        return '/usr/bin/python'
       end
     end;
   },

@@ -10,9 +10,9 @@ vim.g.mapleader = ","
 keymap("n", "<leader>e", ":Explore!<CR>", opts)
 
 -- Remap terminal
-keymap("n", "<leader>th", ":te pwsh -nologo<CR>", opts)
-keymap("n", "<leader>tv", ":split | :te pwsh -nologo<CR>", opts)
-keymap("n", "<leader>t", ":split | :te pwsh -nologo<CR>", opts)
+keymap("n", "<leader>th", ":te zsh<CR>", opts)
+keymap("n", "<leader>tv", ":split | :te zsh<CR>", opts)
+keymap("n", "<leader>t", ":split | :te zsh<CR>", opts)
 
 -- Modes
 --   normal_mode = "n",
@@ -42,7 +42,7 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
 -- Close buffers
-keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
+keymap("n", "<S-q>", "<cmd>bd<CR>", opts)
 
 -- Better copy & paste
 keymap("v", "p", '"_dP', opts)
