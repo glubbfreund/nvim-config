@@ -37,10 +37,5 @@ vim.opt.fillchars.eob=" "                       -- show empty lines at the end o
 vim.opt.shortmess:append "c"                    -- hide all the completion messages, e.g. "-- XXX completion (YYY)", "match 1 of 2", "The only match", "Pattern not found"
 vim.opt.whichwrap:append("<,>,[,],h,l")         -- keys allowed to move to the previous/next line when the beginning/end of line is reached
 vim.opt.iskeyword:append("-")                   -- treats words with `-` as single words
-vim.g.python3_host_prog = "C:\\Users\\olive\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
-vim.g.python_host_prog = "C:\\Users\\olive\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
 vim.g.netrw_banner = 0
 vim.g.netrw_keepdir = 0
-vim.g.neovide_transparency = 0.6
-vim.g.neovide_floating_blur_amount_x = 2.0
-vim.g.neovide_floating_blur_amount_y = 2.0
