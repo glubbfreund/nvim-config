@@ -7,7 +7,7 @@ local opts = { silent = true }
 vim.g.mapleader = ","
 
 -- Remap Netrw
-keymap("n", "<leader>e", ":Explore!<CR>", opts)
+keymap("n", "<leader>e", vim.cmd.Ex)
 
 -- Modes
 --   normal_mode = "n",
