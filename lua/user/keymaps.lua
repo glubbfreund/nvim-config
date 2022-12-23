@@ -9,11 +9,6 @@ vim.g.mapleader = ","
 -- Remap Netrw
 keymap("n", "<leader>e", ":Explore!<CR>", opts)
 
--- Remap terminal
-keymap("n", "<leader>th", ":te zsh<CR>", opts)
-keymap("n", "<leader>tv", ":split | :te zsh<CR>", opts)
-keymap("n", "<leader>t", ":split | :te zsh<CR>", opts)
-
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
