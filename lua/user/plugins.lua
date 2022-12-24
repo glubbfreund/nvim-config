@@ -48,7 +48,6 @@ return packer.startup(function(use)
   use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
   use { "kyazdani42/nvim-web-devicons" }
   use { "nvim-lualine/lualine.nvim" }
-  use { "lewis6991/impatient.nvim" }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim" }
@@ -80,7 +79,6 @@ return packer.startup(function(use)
   use { "nvim-treesitter/nvim-treesitter-context" }
 
   -- Git
-  use { "lewis6991/gitsigns.nvim" }
   use { "mbbill/undotree" }
   use { "tpope/vim-fugitive" }
 
