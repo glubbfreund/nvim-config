@@ -6,9 +6,6 @@ local opts = { silent = true }
 --Remap space as leader key
 vim.g.mapleader = ","
 
--- Remap Netrw
-keymap("n", "<leader>e", vim.cmd.Ex)
-
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -16,6 +13,12 @@ keymap("n", "<leader>e", vim.cmd.Ex)
 --   visual_block_mode = "x",
 --   term_mode = "t",
 --   command_mode = "c",
+
+-- Remap Netrw
+keymap("n", "<leader>e", vim.cmd.Ex)
+
+-- Git 
+keymap("n", "<leader>gs", vim.cmd.Git)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -43,9 +46,6 @@ keymap("n", "<S-q>", "<cmd>bd<CR>", opts)
 keymap("v", "p", '"_dP', opts)
 keymap("n", "<leader>y", "\"+y", opts)
 keymap("v", "<leader>y", "\"+y", opts)
-
--- Press jk fast to ESC
-keymap("i", "jk", "<ESC>", opts)
 
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
