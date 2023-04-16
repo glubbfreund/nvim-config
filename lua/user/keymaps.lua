@@ -13,6 +13,7 @@ vim.g.mapleader = ","
 --   visual_block_mode = "x",
 --   term_mode = "t",
 --   command_mode = "c",
+keymap("n", "<leader>ps", ":split term://pwsh -NoLogo<CR>", opts)
 
 -- Remap Netrw
 keymap("n", "<leader>e", vim.cmd.Ex)
