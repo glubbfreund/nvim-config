@@ -38,3 +38,5 @@ vim.opt.whichwrap:append("<,>,[,],h,l")         -- keys allowed to move to the p
 vim.g.netrw_banner = 1                          -- remove banner at the top
 vim.g.netrw_keepdir = 0                         -- keep cwd
 vim.g.netrw_liststyle = 2                       -- 0 - thin, 1 - details 2 - wide, 3 - tree
+vim.cmd "set noshowcmd"
+vim.cmd "set noshowmode"
