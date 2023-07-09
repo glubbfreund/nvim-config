@@ -45,49 +45,47 @@ packer.init {
 return packer.startup(function(use)
   -- My plugins here
   use { "wbthomason/packer.nvim" }-- Have packer manage itself
-  use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
-  use { "kyazdani42/nvim-web-devicons" }
-  use { "nvim-lualine/lualine.nvim" }
+  use {
+      'nvim-telescope/telescope.nvim',
+      requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  use { 'theprimeagen/harpoon' }
 
   -- Colorschemes
   use { "folke/tokyonight.nvim" }
-  use { "lunarvim/darkplus.nvim" }
 
-  -- cmp plugins
-  use { "hrsh7th/nvim-cmp" } -- The completion plugin
-  use { "hrsh7th/cmp-buffer" } -- buffer completions
-  use { "hrsh7th/cmp-path" } -- path completions
-  use { "saadparwaiz1/cmp_luasnip" } -- snippet completions
-  use { "hrsh7th/cmp-nvim-lsp" }
-  use { "hrsh7th/cmp-nvim-lua" }
+  -- Treesitter 
+  use {
+      'nvim-treesitter/nvim-treesitter',
+      run = ':TSUpdate'
+  }
+  use 'nvim-treesitter/nvim-treesitter-context'
 
-  -- snippets
-  use { "L3MON4D3/LuaSnip" } --snippet engine
-  use { "rafamadriz/friendly-snippets" } -- a bunch of snippets to use
-
-  -- LSP
-  use { "neovim/nvim-lspconfig" } -- enable LSP
-  use { "williamboman/mason.nvim" }
-  use { "williamboman/mason-lspconfig.nvim" }
-  use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
-
-  -- Telescope
-  use { "nvim-telescope/telescope.nvim" }
-
-  -- Treesitter
-  use { "nvim-treesitter/nvim-treesitter" }
-  use { "nvim-treesitter/nvim-treesitter-context" }
-
-  -- Git
+  -- Git / Redo
   use { "mbbill/undotree" }
   use { "tpope/vim-fugitive" }
 
-  -- DAP
-  use { "mfussenegger/nvim-dap" }
-  use { "rcarriga/nvim-dap-ui" }
-  use { "ravenxrz/DAPInstall.nvim" }
-  use { "mfussenegger/nvim-dap-python" }
+  --- LSP-Zero
+  use {
+      'VonHeikemen/lsp-zero.nvim',
+      branch = 'v2.x',
+      requires = {
+          -- LSP Support
+          {'neovim/nvim-lspconfig'},             -- Required
+          {                                      -- Optional
+          'williamboman/mason.nvim',
+          run = function()
+              pcall(vim.cmd, 'MasonUpdate')
+          end,
+      },
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},     -- Required
+      {'hrsh7th/cmp-nvim-lsp'}, -- Required
+      {'L3MON4D3/LuaSnip'},     -- Required
+  }
+}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
