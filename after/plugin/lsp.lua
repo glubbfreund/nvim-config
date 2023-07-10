@@ -27,7 +27,7 @@ lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
 
   vim.keymap.set("n", "<leader>gd", function() vim.lsp.buf.definition() end, opts)
-  vim.keymap.set("n", "<leader>h", function() vim.lsp.buf.hover() end, opts)
+  vim.keymap.set("n", "<leader>ho", function() vim.lsp.buf.hover() end, opts)
   vim.keymap.set("n", "<leader>ws", function() vim.lsp.buf.workspace_symbol() end, opts)
   vim.keymap.set("n", "<leader>of", function() vim.diagnostic.open_float() end, opts)
   vim.keymap.set("n", "gn", function() vim.diagnostic.goto_next() end, opts)
