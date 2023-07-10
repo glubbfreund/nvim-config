@@ -6,18 +6,21 @@ vim.opt.conceallevel = 0                        -- so that `` is visible in mark
 vim.opt.fileencoding = "utf-8"                  -- the encoding written to a file
 vim.opt.hlsearch = true                         -- highlight all matches on previous search pattern
 vim.opt.ignorecase = true                       -- ignore case in search patterns
+vim.opt.incsearch = true
 vim.opt.mouse = "a"                             -- allow the mouse to be used in neovim
 vim.opt.pumheight = 10                          -- pop up menu height
 vim.opt.smartcase = true                        -- smart case
 vim.opt.smartindent = true                      -- make indenting smarter again
 vim.opt.splitbelow = true                       -- force all horizontal splits to go below current window
 vim.opt.splitright = true                       -- force all vertical splits to go to the right of current window
-vim.opt.swapfile = false                        -- creates a swapfile
 vim.opt.termguicolors = true                    -- set term gui colors (most terminals support this)
 vim.opt.timeoutlen = 1000                       -- time to wait for a mapped sequence to complete (in milliseconds)
 vim.opt.undofile = true                         -- enable persistent undo
 vim.opt.updatetime = 300                        -- faster completion (4000ms default)
 vim.opt.writebackup = false                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
+vim.opt.swapfile = false                        -- creates a swapfile
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
 vim.opt.expandtab = true                        -- convert tabs to spaces
 vim.opt.shiftwidth = 4                          -- the number of spaces inserted for each indentation
 vim.opt.tabstop = 4                             -- insert 2 spaces for a tab
@@ -39,4 +42,4 @@ vim.g.netrw_banner = 1                          -- remove banner at the top
 vim.g.netrw_keepdir = 0                         -- keep cwd
 vim.g.netrw_liststyle = 2                       -- 0 - thin, 1 - details 2 - wide, 3 - tree
 vim.cmd "set noshowcmd"
-vim.cmd "set noshowmode"
+vim.cmd "set noshowmode"                        -- as long I use lualine I dont need that twice
