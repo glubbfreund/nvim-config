@@ -20,13 +20,6 @@ keymap("n", "<leader>e", vim.cmd.Ex)
 -- Git 
 keymap("n", "<leader>gs", vim.cmd.Git)
 
--- Harpoon 
-local mark = require("harpoon.mark")
-local ui = require("harpoon.ui")
-
-vim.keymap.set("n", "<leader>a", mark.add_file)
-vim.keymap.set("n", "<leader>w", ui.toggle_quick_menu)
-
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
