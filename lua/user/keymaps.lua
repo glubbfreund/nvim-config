@@ -20,17 +20,6 @@ keymap("n", "<leader>e", vim.cmd.Ex)
 -- Git 
 keymap("n", "<leader>gs", vim.cmd.Git)
 
--- Terminal integration
-keymap("n", "<leader>t", "<cmd>:split | resize 15 | term<CR>", opts)
-keymap("t", "<S-q>", "<cmd>:bd!<CR>", opts)
-keymap("t", "<Esc>", "<C-\\><C-n>", opts)
-
--- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
-
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
