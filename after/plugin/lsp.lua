@@ -1,17 +1,6 @@
 local lsp = require('lsp-zero').preset({})
 
 lsp.ensure_installed({
-    'rust_analyzer',
-    'lua_ls',
-    'pyright',
-    'clangd',
-    'bashls',
-    'cssls',
-    'html',
-    'jsonls',
-    'marksman',
-    'taplo',
-    'yamlls',
 })
 
 local cmp = require('cmp')
